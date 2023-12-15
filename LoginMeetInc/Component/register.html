@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Afacad"
+    />
+    <link rel="stylesheet" href="../Styles/register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <header class="HeaderReg">
+      <h1 class="H1Reg">Register</h1>
+    </header>
+    <main class="MainReg">
+      <div class="FormReg">
+        <div class="NameLastName">
+          <input class="inputRegisterr" type="name" placeholder="Name" />
+          <input class="inputRegisterr" type="name" placeholder="Last name" />
+        </div>
+        <input class="inputRegister" type="email" placeholder="Email" />
+        <input class="inputRegister" type="password" placeholder="password" />
+        <input
+          class="inputRegister"
+          type="password"
+          placeholder="Confirm password"
+        />
+      </div>
+    </main>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 2.5em;
+      "
+    >
+ <button onclick="redirigir" class="buttonReg">Register</button>
+      <a style="text-decoration: none;" href="./Login.html"><p class="Account">Have account? Login now</p></a>
+    </div>
+    <footer class="Footer">
+      <p class="pFooter">Reservate to Martín Luzardo</p>
+    </footer>
+    <script>
+      // Función para redirigir después de un cierto tiempo (en milisegundos)
+      function redirigir() {
+          window.location.href = 'http://127.0.0.1:5500/Component/Login.html'; // Reemplaza 'tu_nueva_pagina.html' con la URL de la página a la que deseas redirigir
+      }
+
+      // Espera 5 segundos (5000 milisegundos) antes de llamar a la función redirigir
+      setTimeout(redirigir, 3000);
+  </script>
+  </body>
+</html>

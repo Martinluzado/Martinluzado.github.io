@@ -1,0 +1,204 @@
+body{
+background-image: url(/fondo.jpg);
+background-size:125%;
+background-blend-mode:soft-light;
+background-color:rgb(90, 76, 76);
+background-repeat: no-repeat;
+    font-family: "Afacad", sans-serif;
+    overflow-x: hidden;
+}
+*{
+    width: auto;
+    height: auto;
+}
+.HeaderLogin {
+text-align: center;
+margin-top: 10em;
+}
+.H1Login {
+color: #e8e8e8;
+text-transform: uppercase;
+}
+.MainLogin {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+.InputEmail {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    transition: 0.3s;
+    width: 50vw;
+    margin-bottom: 1em;
+}
+.InputEmail:focus{
+    outline: none;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+.InputPass {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    transition: 0.3s;
+    width: 50vw;
+}
+.InputPass:focus{
+    outline: none;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+.QuestionAge {
+    color: #e8e8e8;
+    text-transform: uppercase;
+    padding: 2%;
+    font-size: larger
+}
+.cbx {
+    position: relative;
+    top: 22px;
+    width: 27px;
+    height: 27px;
+    border: 2px solid #c8ccd4;
+    border-radius: 3px;
+    transition: 0.1s ease;
+    cursor: pointer;
+    display: block;
+   }
+   
+   .cbx:after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    width: 7px;
+    height: 14px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+   }
+   
+   .lbl {
+    margin-left: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+   }
+   
+   #cbx:checked ~ .cbx {
+    border-color: transparent;
+    background: #ff00bf;
+    filter: drop-shadow(5px 5px 5px rgb(234, 0, 255));
+    animation: jelly 0.6s ease;
+   }
+   
+   #cbx:checked ~ .cbx:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+   }
+   
+   .cntr {
+    position: relative;
+    margin-bottom: 2em;
+   }
+   
+   @keyframes jelly {
+    from {
+     transform: scale(1, 1);
+    }
+   
+    30% {
+     transform: scale(1.25, 0.75);
+    }
+   
+    40% {
+     transform: scale(0.75, 1.25);
+    }
+   
+    50% {
+     transform: scale(1.15, 0.85);
+    }
+   
+    65% {
+     transform: scale(0.95, 1.05);
+    }
+   
+    75% {
+     transform: scale(1.05, 0.95);
+    }
+   
+    to {
+     transform: scale(1, 1);
+    }
+   }
+   
+   .hidden-xs-up {
+    display: none!important;
+   }
+   
+.ButtonContinue {
+    padding: 1.3em 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 5em;
+}
+
+.QuestionRegister {
+    color: #e8e8e8;
+    text-transform: uppercase;
+}
+.ButtonQuestionRegister {
+    padding: 1.3em 3em;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(238,45,253,1) 50%);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  animation: alejarYAcercar 1s infinite alternate;
+}
+@keyframes alejarYAcercar {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+.Footer {
+    position: absolute;
+    width: 95vw;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.pFooter {
+    color: #e8e8e8;
+}

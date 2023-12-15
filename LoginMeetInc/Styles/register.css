@@ -1,0 +1,111 @@
+body{
+    background-image: url(/fondo.jpg);
+    background-size:125%;
+    background-blend-mode:soft-light;
+    background-color:rgb(90, 76, 76);
+    background-repeat: no-repeat;
+        font-family: "Afacad", sans-serif;
+        overflow-x: hidden;
+    }
+    *{
+        width: auto;
+        height: auto;
+    }
+.HeaderReg {
+text-align: center;
+margin-top: 10em;
+}
+.H1Reg {
+color: white;
+text-transform: uppercase;
+}
+.MainReg {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.FormReg {
+display: flex;
+justify-content: center;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+}
+.inputRegisterr {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    transition: 0.3s;
+    width: 20vw;
+    margin-bottom: 1em;
+}
+.inputRegisterr:focus {
+    outline: none;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+.inputRegister {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    transition: 0.3s;
+    width: 50vw;
+    margin-bottom: 1em;
+}
+.inputRegister:focus {
+    outline: none;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+.Footer {
+position: absolute;
+bottom: 1px;
+width: 95vw;
+}
+.buttonReg{
+    padding: 1.3em 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 5em;
+}
+.buttonReg:focus{
+    padding: 1.3em 3em;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #06be62;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 5em;
+}
+.Account{
+    color: white;
+    text-transform: uppercase;
+}
+.pFooter {
+color: white;
+text-align: center;
+}
